@@ -1,36 +1,45 @@
 import MyFooter from "../Components/MyFooter";
 import Navbar from "../Components/Navbar";
 import WidgetBox from "../Components/WidgetBox";
+import Men1 from "./../Images/TheyLove1.jpg"
+import Men2 from "./../Images/TheyLove2.jpg"
+import Men3 from "./../Images/TheyLove3.jpg"
+import Men4 from "./../Images/TheyLove4.jpg"
+import Men5 from "./../Images/TheyLove5.jpg"
+import Men6 from "./../Images/TheyLove6.jpg"
+import logoImage from "./../Images/Logo-White.png"
+
+
 
 function About() {
   let TheyLoveData = [
     {
-      image: "./../src/Images/TheyLove1.jpg",
+      image: {Men1},
       name: "Stella Jones",
       Profession: "Super Model",
     },
     {
-      image: "./../src/Images/TheyLove2.jpg",
+      image: {Men2},
       name: "Carlos Hughes",
       Profession: "Student",
     },
     {
-      image: "./../src/Images/TheyLove3.jpg",
+      image: {Men3},
       name: "Mark Adams",
       Profession: "Entrepreneur",
     },
     {
-      image: "./../src/Images/TheyLove4.jpg",
+      image: {Men4},
       name: "James Hobbs",
       Profession: "Businessman",
     },
     {
-      image: "./../src/Images/TheyLove5.jpg",
+      image: {Men5},
       name: "Chloe Newts",
       Profession: "Student",
     },
     {
-      image: "./../src/Images/TheyLove6.jpg",
+      image: {Men6},
       name: "Brianna Stark",
       Profession: "Fashion Designer",
     },
@@ -42,7 +51,7 @@ function About() {
         <div className="AboutHero HeroDiv">
           <div className="HeroOverlay">
             <Navbar
-              logo="./src/Images/Logo-White.png"
+              logo={logoImage}
               transparent={true}
               isActive="About"
             />

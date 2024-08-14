@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import "./MyFooter.css";
+import logoImage from "./../Images/Logo-White.png"
+import logoImage2 from "./../Images/Logo-Black.png"
+
 
 function MyFooter() {
   return (
@@ -7,7 +10,7 @@ function MyFooter() {
       <div className="footerContainer section-padding bg-black text-white">
         <div className="container">
           <div className="logoDiv">
-            <img src="./../src/Images/Logo-White.png" width="140" />
+            <img src={logoImage} width="140" />
             <p className="w-75 mt-4">
               Transform your style with OnlineWardrobe - where fashion meets
               elegance. Discover the latest trends and timeless classics to
@@ -62,7 +65,7 @@ function MyFooter() {
         </div>
         <div>
           <Link to="/">
-            <img src="./../src/Images/Logo-Black.png" alt="" />
+            <img src={logoImage2} alt="" />
           </Link>
         </div>
         <div>

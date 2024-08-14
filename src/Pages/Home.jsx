@@ -6,6 +6,9 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import MyFooter from "../Components/MyFooter";
 import WidgetBox from "../Components/WidgetBox";
+import LogoImage from "./../Images/Logo-White.png";
+
+
 
 function Home() {
   const [apiData, setApiData] = useState([]);
@@ -31,7 +34,7 @@ function Home() {
       <header>
         <div className="HeroDiv">
           <div className="HeroOverlay">
-            <Navbar logo="./src/Images/Logo-White.png" transparent={true} isActive="Home" />
+            <Navbar logo={LogoImage} transparent={true} isActive="Home" />
             <div className="HeroText d-flex align-items-center h-75">
               <div className="d-flex flex-column gap-3 text-white">
                 <h2 className="fs-5">Summer Collection</h2>

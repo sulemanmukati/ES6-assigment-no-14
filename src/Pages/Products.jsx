@@ -8,6 +8,7 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import MyCard from "../Components/MyCard";
 import MyFooter from "../Components/MyFooter";
+import LogoImage from "./../Images/Logo-Black.png"
 
 function Products() {
   const [categories, setCategories] = useState([]);
@@ -41,7 +42,7 @@ function Products() {
     <>
       <header>
         <Navbar
-          logo="./../src/Images/Logo-Black.png"
+          logo={LogoImage}
           transparent={false}
           isActive="Products"
         />
